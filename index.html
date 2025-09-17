@@ -3,6 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <div class="calc-background" aria-hidden="true"></div>
+
+      <h1>Calculadora</h1>
+      <input type="text" id="display" disabled />
+
+      <div class="teclado">
+        <button onclick="ApagarUltimo()">←</button>
+        <button onclick="limpar()">c</button>
+        <button onclick="insert('%')">%</button>
+        <button onclick="insert('/')">&#247;</button>
+      </div>
+
+      <div class="teclado">
+        <button onclick="insert('7')">7</button>
+        <button onclick="insert('8')">8</button>
+        <button onclick="insert('9')">9</button>
+        <button onclick="insert('*')">x</button>
+      </div>
+
+      <div class="teclado">
+        <button onclick="insert('4')">4</button>
+        <button onclick="insert('5')">5</button>
+        <button onclick="insert('6')">6</button>
+        <button onclick="insert('-')">-</button>
+      </div>
+
+      <div class="teclado">
+        <button onclick="insert('1')">1</button>
+        <button onclick="insert('2')">2</button>
+        <button onclick="insert('3')">3</button>
+        <button onclick="insert('+')">+</button>
+      </div>
+
+      <div class="teclado">
+        <button onclick="insert(',')">,</button>
+        <button onclick="insert('0')">0</button>
+        <button onclick="insert('.')">.</button>
+        <button onclick="calcular()">=</button>
+      </div>
+
+      <h2>Projeto Criado por Dener Caetano 2025</h2>
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu primeiro site</title>
     <link rel="stylesheet" href="style.css" />
   </head>
